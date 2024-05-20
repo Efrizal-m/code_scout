@@ -4,9 +4,9 @@ import (
 	"log"
 	"net"
 
-	"github.com/Efrizal-m/lottery/internal/db"
-	"github.com/Efrizal-m/lottery/internal/lottery"
-	"github.com/Efrizal-m/lottery/pb"
+	"github.com/Efrizal-m/lottery-club/internal/db"
+	"github.com/Efrizal-m/lottery-club/internal/lottery"
+	"github.com/Efrizal-m/lottery-club/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

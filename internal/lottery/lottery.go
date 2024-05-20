@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Efrizal-m/lottery/pb"
+	pb "github.com/Efrizal-m/lottery-club/pb"
 	"gorm.io/gorm"
 )
 
