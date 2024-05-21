@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package lottery;
+option go_package = "github.com/Efrizal-m/lottery/pb";
+
+message LotteryRequest {
+    string user_id = 1;
+}
+
+message LotteryResponse {
+    bool win = 1;
+    string message = 2;
+}
+
+message LotteryEntriesRequest {
+    string user_id = 1;
+}
+
+message LotteryEntriesResponse {
+    repeated LotteryResponse entries = 1;
+}
+
+service LotteryService {
+    rpc EnterLottery (LotteryRequest) returns (LotteryResponse);
+    rpc GetLotteryEntries (LotteryEntriesRequest) returns (LotteryEntriesResponse);
+}
